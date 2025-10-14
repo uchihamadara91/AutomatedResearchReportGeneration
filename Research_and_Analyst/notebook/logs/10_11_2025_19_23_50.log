@@ -1,0 +1,20 @@
+{"timestamp": "2025-10-11T13:54:12.773508Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-11T13:54:12.774217Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-11T13:54:12.775394Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-11T13:54:12.777148Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-11T13:54:12.778188Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-11T13:54:12.779187Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": [], "timestamp": "2025-10-11T13:54:12.781195Z", "level": "info", "event": "YAML config loaded"}
+{"timestamp": "2025-10-11T13:56:28.996302Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-11T13:56:28.998050Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-11T13:56:28.998050Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-11T13:56:28.998050Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-11T13:56:29.001401Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-11T13:56:29.001917Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-11T13:56:29.013369Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-11T13:56:31.085128Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+USER_AGENT environment variable not set, consider setting it to identify your requests.

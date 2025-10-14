@@ -1,0 +1,41 @@
+{"timestamp": "2025-10-13T14:32:29.788672Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:32:29.789857Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:32:29.790863Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:32:29.790863Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-13T14:32:29.791863Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-13T14:32:29.792863Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-13T14:32:29.803393Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-13T14:32:29.811844Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"timestamp": "2025-10-13T14:44:55.567518Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:44:55.569199Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:44:55.569533Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:44:55.570534Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-13T14:44:55.572536Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-13T14:44:55.573533Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-13T14:44:55.576533Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-13T14:44:55.583367Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"timestamp": "2025-10-13T14:45:13.190571Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:45:13.191569Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:45:13.192569Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-13T14:45:13.193569Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-13T14:45:13.194571Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-13T14:45:13.194571Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-13T14:45:13.197569Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-13T14:45:13.203867Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=integration+of+astrology+in+contemporary+practices&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 100 of 2849320 total results

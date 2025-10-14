@@ -1,0 +1,41 @@
+{"timestamp": "2025-10-14T14:32:24.383139Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-14T14:32:24.397001Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-14T14:32:24.397001Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-14T14:32:24.397001Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-14T14:32:24.397001Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-14T14:32:24.397001Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-14T14:32:24.408826Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-14T14:32:24.418674Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=integration+of+astrology+in+contemporary+practices&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 10 of 2851422 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heliosphere+effects+on+humans&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2221321 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Adding a node to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+Adding an edge to a graph that has already been compiled. This will not be reflected in the compiled graph.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Heliosphere+effects+on+humans+and+astrology+influence+on+modern+society&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 10 of 2829300 total results
