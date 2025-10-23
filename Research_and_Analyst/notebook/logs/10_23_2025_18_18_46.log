@@ -1,0 +1,34 @@
+{"timestamp": "2025-10-23T12:48:46.404853Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-23T12:48:46.404853Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-23T12:48:46.404853Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-23T12:48:46.407928Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-23T12:48:46.409174Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-23T12:48:46.409174Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-23T12:48:46.418026Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-23T12:48:46.425022Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=evolution+of+astrology+in+contemporary+society+cultural+trends+personal+identities&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 25 of 2859219 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=examples+of+astrology%27s+influence+on+modern+culture+and+cultural+trends&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 25 of 2864034 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+individuals+use+astrology+for+self-reflection+and+understanding+their+place+in+the+cosmos&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 25 of 2864739 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

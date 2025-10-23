@@ -1,0 +1,193 @@
+{"timestamp": "2025-10-23T14:05:27.425161Z", "level": "info", "event": "OPENAI_API_KEY loaded from environment"}
+{"timestamp": "2025-10-23T14:05:27.426460Z", "level": "info", "event": "GOOGLE_API_KEY loaded from environment"}
+{"timestamp": "2025-10-23T14:05:27.427550Z", "level": "info", "event": "GROQ_API_KEY loaded from environment"}
+{"timestamp": "2025-10-23T14:05:27.428076Z", "level": "warning", "event": "ASTRA_DB_API_ENDPOINT is missing from environment"}
+{"timestamp": "2025-10-23T14:05:27.428616Z", "level": "warning", "event": "ASTRA_DB_APPLICATION_TOKEN is missing from environment"}
+{"timestamp": "2025-10-23T14:05:27.429663Z", "level": "warning", "event": "ASTRA_DB_KEYSPACE is missing from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-23T14:05:27.432604Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-23T14:05:27.440596Z", "level": "info", "event": "Loading LLM"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=evolution+of+astrology+in+contemporary+society+cultural+trends+personal+identities&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 25 of 2859219 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=examples+of+astrology+integration+in+contemporary+practices+and+its+impact+on+societal+trends&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2865174 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=examples+of+astrology+used+to+navigate+uncertainty+in+global+events&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 25 of 2863202 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+planetary+movements+influence+human+emotions+and+behaviors&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=historical+examples+of+planetary+transits+influencing+human+behavior&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 25 of 2797880 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mercury+retrograde+effects+on+cognitive+functions+and+decision-making&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2836867 total results
+Got first page: 100 of 2841053 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=case+study+Mercury+retrograde+impact+on+decision-making+cognitive+function&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2445490 total results
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+are+predictive+models+developed+using+planetary+movements+to+forecast+human+emotions+and+behaviors&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2852383 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=recent+celestial+events+impact+on+human+emotions+behaviors&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2242850 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 1.552000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 0.503000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 12.354000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 5.334000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Jupiter%27s+influence+on+human+behavior+and+societal+trends&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mercury+retrograde+influence+on+decision-making+and+human+behavior&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2835825 total results
+Got first page: 100 of 2835778 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+planetary+movements+like+Mars+or+Venus+cycles+influence+human+emotions+and+interpersonal+relationships&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 25 of 2813457 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=planetary+alignment+mood+fluctuations+case+study+astrology+psychology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 1188843 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=example+of+Mars+retrograde+impact+on+social+dynamics+or+collective+behavior&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 25 of 2856013 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Jupiter%27s+influence+on+individual+behavior+during+transits+case+studies&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 10 of 2436537 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Mercury+retrograde+effects+on+communication+and+cognitive+processes&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=examples+of+planetary+transits+affecting+human+behavior+and+emotions&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+planetary+movements+influence+human+emotions+and+behaviors&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 25 of 2797880 total results
+Got first page: 100 of 2838635 total results
+Got first page: 25 of 2862716 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=recent+celestial+events+influence+human+behavior+emotions&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 730870 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=predictive+models+using+planetary+cycles+for+forecasting+human+behavior+trends&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 100 of 2620184 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=scientific+studies+on+Mercury+retrograde+effects+on+communication+and+cognition&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Got first page: 25 of 2841340 total results
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+Retrying request to /chat/completions in 0.814000 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
