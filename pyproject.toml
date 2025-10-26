@@ -10,17 +10,27 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "aiofiles>=23.2.1",
     "arxiv>=2.2.0",
+    "bcrypt==3.2.2",
+    "fastapi==0.120.0",
+    "httpx==0.28.1",
     "ipykernel==6.30.1",
+    "jinja2==3.1.6",
     "langchain-community==0.3.30",
     "langchain-core==0.3.78",
     "langchain-google-genai==2.1.8",
     "langchain-groq==0.3.6",
     "langchain-openai==0.3.32",
     "langgraph==0.6.8",
+    "passlib==1.7.4",
     "pymupdf>=1.26.5",
+    "python-docx==1.2.0",
+    "reportlab==4.4.4",
+    "sqlalchemy==2.0.43",
     "structlog==25.4.0",
     "tavily-python==0.7.12",
+    "uvicorn==0.38.0",
     "wikipedia==1.4.0",
 ]
 

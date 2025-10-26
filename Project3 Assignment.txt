@@ -1,0 +1,18 @@
+1)Quality of generation(As an AI Developer):
+- Deep Eval
+- RAGAS
+- GuardRailsAI
+
+2) Add the guardrails wherever you can
+
+3) Enterprise specific->
+- Add RAG-> def search_retriever()(Add retriever in the workflow)
+
+4) Add the Lagsmith Dashboard just to track the entire LLM application
+
+
+Other Enhancement in UI:
+1) Give option to user to provide max_analyst number
+2) After creating the analyst showcase that information over UI just to verify
+	(give 2 options - i) REJECT-> Give option for human feedback->generate the report(loop)
+			- ii) ACCEPT-> generate the report  
