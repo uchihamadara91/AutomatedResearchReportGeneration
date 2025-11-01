@@ -3,6 +3,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from sqlalchemy.orm import Session
 from research_and_analyst.database.db_config import SessionLocal, User, hash_password, verify_password
 from research_and_analyst.api.services.report_service import ReportService
+from fastapi.responses import HTMLResponse, RedirectResponse, FileResponse, JSONResponse
 
 router = APIRouter()
 SESSIONS = {}
@@ -104,10 +105,14 @@ async def submit_feedback(request: Request, topic: str = Form(...), feedback: st
         },
     )
 
-@router.get("/download/{file_name}", response_class=HTMLResponse)
+@router.get("/download/{file_name}")   # ← remove response_class=HTMLResponse
 async def download_report(file_name: str):
     service = ReportService()
     file_response = service.download_file(file_name)
-    if file_response:
+
+    # If we got a real file, stream it
+    if isinstance(file_response, FileResponse):
         return file_response
-    return {"error": f"File {file_name} not found"}
+
+    # Otherwise it's an error dict -> return as JSON 404 (not HTML)
+    return JSONResponse(file_response, status_code=404)

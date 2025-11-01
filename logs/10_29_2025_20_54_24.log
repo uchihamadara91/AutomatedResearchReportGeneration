@@ -1,0 +1,125 @@
+{"timestamp": "2025-10-29T15:24:39.462118Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T15:24:39.463114Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T15:24:39.463114Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T15:24:39.463114Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T15:24:39.465113Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T15:24:39.466110Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T15:24:39.466110Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T15:24:40.472388Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:24:40.473385Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:24:40.474394Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:24:40.486404Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:24:40.494117Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "thread_id": "5362e526-ede8-439a-9d84-3e568e0cc724", "timestamp": "2025-10-29T15:24:40.494117Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-10-29T15:24:40.499119Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-10-29T15:24:50.482538Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-10-29T15:25:07.373304Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T15:25:07.373304Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T15:25:07.373304Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T15:25:07.373304Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T15:25:07.375848Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T15:25:07.376187Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T15:25:07.376187Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T15:25:07.376826Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:25:07.377152Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:25:07.377152Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:25:07.386526Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:25:07.394727Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "5362e526-ede8-439a-9d84-3e568e0cc724", "timestamp": "2025-10-29T15:25:07.396729Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Orion", "timestamp": "2025-10-29T15:25:07.404556Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Alex Carter", "timestamp": "2025-10-29T15:25:07.408542Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Maya Rivera", "timestamp": "2025-10-29T15:25:07.412320Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Jordan, a curious investigator into the realms of belief and science. I'm eager to delve into the topic of astrology with you. \n\nTo start, could you explain why astrology is often perceived", "timestamp": "2025-10-29T15:25:09.095300Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:25:09.107620Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, Dr. Rivera. My name is Alex Thompson, and I'm fascinated by the cultural aspects of astrology. I'm eager to learn more about how astrology has historically influenced human societies. Could you", "timestamp": "2025-10-29T15:25:09.523650Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:25:09.533552Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "why is astrology perceived as significant influence on human behavior despite lack of scientific evidence", "timestamp": "2025-10-29T15:25:10.116237Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "why is astrology perceived as significant influence on human behavior despite lack of scientific evidence", "timestamp": "2025-10-29T15:25:10.122273Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=why+is+astrology+perceived+as+significant+influence+on+human+behavior+despite+lack+of+scientific+evidence&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "historical influence of astrology on human societies and cultural practices", "timestamp": "2025-10-29T15:25:10.581335Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "historical influence of astrology on human societies and cultural practices", "timestamp": "2025-10-29T15:25:10.633055Z", "level": "info", "event": "Performing serper web search"}
+{"module": "InterviewGraphBuilder", "query": "Why is astrology considered influential on human behavior despite lack of scientific evidence?", "timestamp": "2025-10-29T15:25:10.637056Z", "level": "info", "event": "Performing Tavily web search"}
+{"module": "InterviewGraphBuilder", "query": "historical influence of astrology on human societies and cultural practices", "timestamp": "2025-10-29T15:25:10.648279Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=historical+influence+of+astrology+on+human+societies+and+cultural+practices&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Mercer, a researcher with a keen interest in the intersection of psychology and astrology. I'm excited to delve into how astrology influences human behavior and personality traits. \n\nT", "timestamp": "2025-10-29T15:25:10.753816Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:25:10.764254Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrological signs influence human behavior in non-obvious ways", "timestamp": "2025-10-29T15:25:11.626575Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrological signs influence human behavior and personality traits", "timestamp": "2025-10-29T15:25:11.745390Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrological signs influence human behavior and personality traits", "timestamp": "2025-10-29T15:25:11.776338Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+astrological+signs+influence+human+behavior+and+personality+traits&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 10 of 2868894 total results
+{"module": "InterviewGraphBuilder", "result_count": 3028, "timestamp": "2025-10-29T15:25:11.831172Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1497, "timestamp": "2025-10-29T15:25:12.374444Z", "level": "info", "event": "Serper Web search completed"}
+Got first page: 100 of 2865304 total results
+{"module": "InterviewGraphBuilder", "result_count": 3733, "timestamp": "2025-10-29T15:25:12.499194Z", "level": "info", "event": "Arxiv doc search completed"}
+Got first page: 1 of 2803259 total results
+Sleeping: 2.997779 seconds
+{"module": "InterviewGraphBuilder", "result_count": 1487, "timestamp": "2025-10-29T15:25:12.737080Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1580, "timestamp": "2025-10-29T15:25:13.731091Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-10-29T15:25:13.790544Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Alex Carter", "timestamp": "2025-10-29T15:25:13.790544Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-10-29T15:25:14.711034Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Maya Rivera", "timestamp": "2025-10-29T15:25:14.711034Z", "level": "info", "event": "Generating expert answer"}
+Requesting page (first: False, try: 0): https://export.arxiv.org/api/query?search_query=how+astrological+signs+influence+human+behavior+and+personality+traits&id_list=&sortBy=relevance&sortOrder=descending&start=1&max_results=100
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-10-29T15:25:16.200358Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 2847, "timestamp": "2025-10-29T15:25:16.817187Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Orion", "timestamp": "2025-10-29T15:25:16.819197Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology has played a significant role in shaping cultural practices and societal structures throughout history. For instance, in Roman society, astrology was not merely a tool for personal g", "timestamp": "2025-10-29T15:25:23.650157Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-10-29T15:25:23.650756Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Maya Rivera", "timestamp": "2025-10-29T15:25:23.650756Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology is often perceived as significant in influencing human behavior due to its historical and cultural presence, as well as its emotional and psychological appeal. Despite the lack of sc", "timestamp": "2025-10-29T15:25:24.878291Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-10-29T15:25:24.879359Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Alex Carter", "timestamp": "2025-10-29T15:25:24.879359Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology is often seen as a framework for understanding human behavior and relationships. It provides insights into personality traits, behaviors, and daily decisions by associating them with", "timestamp": "2025-10-29T15:25:26.730915Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-10-29T15:25:26.730915Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Orion", "timestamp": "2025-10-29T15:25:26.730915Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3708, "timestamp": "2025-10-29T15:25:55.079532Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 2976, "timestamp": "2025-10-29T15:25:57.511014Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3901, "timestamp": "2025-10-29T15:25:58.461582Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-10-29T15:25:58.463593Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-10-29T15:25:58.463593Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-10-29T15:25:58.463593Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 766, "timestamp": "2025-10-29T15:26:03.279398Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 800, "timestamp": "2025-10-29T15:26:04.080320Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:26:14.730336Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:26:14.730336Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:26:14.730336Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "format": "docx", "timestamp": "2025-10-29T15:26:14.735386Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_backbone_in_human_nat_50da78a4_20251029_205614\\Let_s_talk_about_astrology_how_it_is_a_backbone_in_human_nat_50da78a4_20251029_205614.docx", "timestamp": "2025-10-29T15:26:14.762329Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "format": "pdf", "timestamp": "2025-10-29T15:26:14.762329Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "\\\\?\\C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_backbone_in_human_nat_50da78a4_20251029_205614\\Let_s_talk_about_astrology_how_it_is_a_backbone_in_human_nat_50da78a4_20251029_205614.pdf", "timestamp": "2025-10-29T15:26:14.774424Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_backbone_in_human_nat_50da78a4_20251029_205614\\Let_s_talk_about_astrology_how_it_is_a_backbone_in_human_nat_50da78a4_20251029_205614.pdf", "timestamp": "2025-10-29T15:26:14.774424Z", "level": "info", "event": "Report saved successfully"}
+{"timestamp": "2025-10-29T15:26:53.433301Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T15:26:53.433301Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T15:26:53.433301Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T15:26:53.434302Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T15:26:53.436302Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T15:26:53.436626Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T15:26:53.436626Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T15:26:53.436626Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:26:53.437699Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:26:53.437699Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T15:26:53.449348Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T15:26:53.457128Z", "level": "info", "event": "Report generation graph built successfully"}

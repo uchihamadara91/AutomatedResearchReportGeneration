@@ -2,18 +2,21 @@ import os
 import sys
 import re
 from datetime import datetime
+import platform
+from pathlib import Path
+import hashlib
 from typing import Optional
 from langgraph.types import Send
 from jinja2 import Template
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(current_dir, "../../"))
-sys.path.append(project_root)
+
 
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_community.utilities import GoogleSerperAPIWrapper
+
 
 from docx import Document
 from reportlab.lib.pagesizes import letter
@@ -33,7 +36,9 @@ from research_and_analyst.prompt_lib.prompt_locator import (
 )
 from research_and_analyst.logger import GLOBAL_LOGGER
 from research_and_analyst.exception.custom_exception import ResearchAnalystException
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class AutonomousReportGenerator:
     """
@@ -43,9 +48,8 @@ class AutonomousReportGenerator:
     def __init__(self, llm):
         self.llm = llm
         self.memory = MemorySaver()
-        self.tavily_search = TavilySearchResults(
-            tavily_api_key="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"
-        )
+        self.tavily_search = TavilySearchResults()
+        self.serper_search = GoogleSerperAPIWrapper()
         self.logger = GLOBAL_LOGGER.bind(module="AutonomousReportGenerator")
 
     # ----------------------------------------------------------------------
@@ -175,25 +179,35 @@ class AutonomousReportGenerator:
             raise ResearchAnalystException("Failed to finalize report", e)
 
     # ----------------------------------------------------------------------
-    def save_report(self, final_report: str, topic: str,
-                    format: str = "docx"):
-        """Save the report as DOCX or PDF, each in its own subfolder."""
+    
+
+    def _slugify_topic_for_fs(self,topic: str, max_len: int = 60) -> str:
+        slug = re.sub(r"[^A-Za-z0-9_\-]+", "_", topic.strip())
+        slug = re.sub(r"_+", "_", slug).strip("_")
+        return slug[:max_len]
+
+    def _project_root(self) -> str:
+        return os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+
+    def _ensure_dir(self,p: str) -> None:
+        Path(p).mkdir(parents=True, exist_ok=True)
+
+    
+    # report_generator_workflow.py (inside save_report)
+    def save_report(self, final_report: str, topic: str, format: str = "docx"):
         try:
             self.logger.info("Saving report", topic=topic, format=format)
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            safe_topic = re.sub(r'[\\/*?:"<>|]', "_", topic)
-            base_name = f"{safe_topic.replace(' ', '_')}_{timestamp}"
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            safe_slug = self._slugify_topic_for_fs(topic, max_len=60)
+            short_hash = hashlib.sha1(topic.encode("utf-8")).hexdigest()[:8]
+            base_name = f"{safe_slug}_{short_hash}_{ts}"
 
-            # Root folder (always inside project)
-            project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
-            root_dir = os.path.join(project_root, "generated_report")
-
-            # Create subfolder for this report
+            root_dir = os.path.join(self._project_root(), "generated_report")
             report_folder = os.path.join(root_dir, base_name)
-            os.makedirs(report_folder, exist_ok=True)
+            self._ensure_dir(report_folder)
 
-            # Final file path inside that folder
-            file_path = os.path.join(report_folder, f"{base_name}.{format}")
+            file_name = f"{base_name}.{format}"
+            file_path = os.path.join(report_folder, file_name)
 
             if format == "docx":
                 self._save_as_docx(final_report, file_path)
@@ -204,10 +218,10 @@ class AutonomousReportGenerator:
 
             self.logger.info("Report saved successfully", path=file_path)
             return file_path
-
         except Exception as e:
             self.logger.error("Error saving report", error=str(e))
             raise ResearchAnalystException("Failed to save report file", e)
+
 
     # ----------------------------------------------------------------------
     def _save_as_docx(self, text: str, file_path: str):
@@ -305,7 +319,7 @@ class AutonomousReportGenerator:
         try:
             self.logger.info("Building report generation graph")
             builder = StateGraph(ResearchGraphState)
-            interview_graph = InterviewGraphBuilder(self.llm, self.tavily_search).build()
+            interview_graph = InterviewGraphBuilder(self.llm, self.tavily_search, self.serper_search).build()
 
             def initiate_all_interviews(state: ResearchGraphState):
                 topic = state.get("topic", "Untitled Topic")

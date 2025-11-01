@@ -1,0 +1,111 @@
+{"timestamp": "2025-10-29T14:04:53.758165Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T14:04:53.758165Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:04:53.759157Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:04:53.759157Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:04:53.769204Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:04:53.770204Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:04:53.771206Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:04:54.760382Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:04:54.775021Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:04:54.776059Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:04:54.797027Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:04:54.804099Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "Let's talk about astrology", "thread_id": "34861b5a-52fb-4126-b808-086bfd204043", "timestamp": "2025-10-29T14:04:54.804099Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "timestamp": "2025-10-29T14:04:54.807680Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-10-29T14:05:01.846049Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-10-29T14:05:18.590275Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T14:05:18.590275Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:05:18.590275Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:05:18.590275Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:05:18.592275Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:05:18.592275Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:05:18.592275Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:05:18.593274Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:05:18.593274Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:05:18.594276Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:05:18.599368Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:05:18.607279Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "34861b5a-52fb-4126-b808-086bfd204043", "timestamp": "2025-10-29T14:05:18.608282Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Starling", "timestamp": "2025-10-29T14:05:18.615444Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "James O'Neil", "timestamp": "2025-10-29T14:05:18.616242Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Luna Vega", "timestamp": "2025-10-29T14:05:18.618463Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, Dr. Starling. My name is Alex Thompson, and I'm fascinated by the historical development of astrology and its cultural significance. I'm eager to learn from your expertise. Could you share an e", "timestamp": "2025-10-29T14:05:21.542920Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:05:21.545832Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "historical impact of astrology on ancient civilizations", "timestamp": "2025-10-29T14:05:22.685924Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex, and I'm fascinated by the intersection of astrology and wellness. I'm eager to learn how astrological insights can be practically applied to enhance personal growth and mental health.", "timestamp": "2025-10-29T14:05:23.011444Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:05:23.012444Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Carter, a science journalist with a keen interest in understanding the intersection of science and popular beliefs. I'm eager to delve into the topic of astrology with you. \n\nTo start,", "timestamp": "2025-10-29T14:05:23.546153Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:05:23.547144Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "Why does astrology lack empirical support from a scientific perspective?", "timestamp": "2025-10-29T14:05:25.566569Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrology can be used to address mental health challenges", "timestamp": "2025-10-29T14:05:26.795089Z", "level": "info", "event": "Performing Tavily web search"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-10-29T14:05:27.692990Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Starling", "timestamp": "2025-10-29T14:05:27.692990Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-10-29T14:05:30.389886Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "James O'Neil", "timestamp": "2025-10-29T14:05:30.391886Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-10-29T14:05:31.391030Z", "level": "info", "event": "Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Luna Vega", "timestamp": "2025-10-29T14:05:31.392032Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Certainly, Dr. Starling. One notable example is the Babylonian civilization, which is considered the birthplace of organized astrology. The Babylonians developed the first horoscope system aro", "timestamp": "2025-10-29T14:05:33.778199Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-10-29T14:05:33.779200Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Starling", "timestamp": "2025-10-29T14:05:33.780201Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology, while popular and historically significant, is considered a pseudoscience due to several key reasons. Firstly, there is no empirical evidence supporting the idea that celestial bodi", "timestamp": "2025-10-29T14:05:38.293327Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-10-29T14:05:38.294329Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "James O'Neil", "timestamp": "2025-10-29T14:05:38.295406Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology can be a valuable tool in addressing mental health challenges by offering a unique perspective on self-awareness and personal growth. For instance, understanding one's moon sign can ", "timestamp": "2025-10-29T14:05:40.835935Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-10-29T14:05:40.836462Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Luna Vega", "timestamp": "2025-10-29T14:05:40.837458Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3966, "timestamp": "2025-10-29T14:05:56.514987Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4435, "timestamp": "2025-10-29T14:06:02.410648Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3892, "timestamp": "2025-10-29T14:06:04.978397Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "timestamp": "2025-10-29T14:06:04.980409Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "timestamp": "2025-10-29T14:06:04.980409Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "timestamp": "2025-10-29T14:06:04.980409Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 787, "timestamp": "2025-10-29T14:06:13.545347Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 813, "timestamp": "2025-10-29T14:06:14.051448Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:19.960319Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:19.961827Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:19.961827Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "format": "docx", "timestamp": "2025-10-29T14:06:19.962831Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let's_talk_about_astrology_20251029_193619\\Let's_talk_about_astrology_20251029_193619.docx", "timestamp": "2025-10-29T14:06:20.010047Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "format": "pdf", "timestamp": "2025-10-29T14:06:20.011029Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let's_talk_about_astrology_20251029_193620\\Let's_talk_about_astrology_20251029_193620.pdf", "timestamp": "2025-10-29T14:06:20.019070Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let's_talk_about_astrology_20251029_193620\\Let's_talk_about_astrology_20251029_193620.pdf", "timestamp": "2025-10-29T14:06:20.019070Z", "level": "info", "event": "Report saved successfully"}
+{"timestamp": "2025-10-29T14:06:24.821222Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T14:06:24.821222Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:06:24.822212Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:06:24.822212Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:06:24.824214Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:06:24.824725Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:06:24.824725Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:06:24.825231Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:24.825231Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:06:24.825851Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:06:24.835628Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:24.841139Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2025-10-29T14:06:26.462702Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-29T14:06:26.462702Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:06:26.462702Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-29T14:06:26.462702Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:06:26.465859Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-29T14:06:26.466287Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:06:26.466287Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-29T14:06:26.466881Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:26.467391Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:06:26.467391Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-29T14:06:26.474492Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-29T14:06:26.481026Z", "level": "info", "event": "Report generation graph built successfully"}

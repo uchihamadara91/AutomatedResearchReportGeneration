@@ -14,6 +14,8 @@ from research_and_analyst.prompt_lib.prompt_locator import (
 from research_and_analyst.logger import GLOBAL_LOGGER
 from research_and_analyst.exception.custom_exception import ResearchAnalystException
 
+import arxiv
+
 
 class InterviewGraphBuilder:
     """
@@ -26,12 +28,13 @@ class InterviewGraphBuilder:
         5. Writing a summarized report section.
     """
 
-    def __init__(self, llm, tavily_search):
+    def __init__(self, llm, tavily_search, serper_search):
         """
         Initialize the InterviewGraphBuilder with the LLM model and Tavily search tool.
         """
         self.llm = llm
         self.tavily_search = tavily_search
+        self.serper = serper_search
         self.memory = MemorySaver()
         self.logger = GLOBAL_LOGGER.bind(module="InterviewGraphBuilder")
 
@@ -59,7 +62,7 @@ class InterviewGraphBuilder:
     # ----------------------------------------------------------------------
     # 🔹 Step 2: Perform web search
     # ----------------------------------------------------------------------
-    def _search_web(self, state: InterviewState):
+    def _search_tavily(self, state: InterviewState):
         """
         Generate a structured search query and perform Tavily web search.
         """
@@ -82,13 +85,58 @@ class InterviewGraphBuilder:
                     for doc in search_docs
                 ]
             )
-            self.logger.info("Web search completed", result_count=len(search_docs))
+            self.logger.info("Tavily Web search completed", result_count=len(search_docs))
             return {"context": [formatted]}
 
         except Exception as e:
-            self.logger.error("Error during web search", error=str(e))
-            raise ResearchAnalystException("Failed during web search execution", e)
+            self.logger.error("Error during tavily web search", error=str(e))
+            raise ResearchAnalystException("Failed during tavily web search execution", e)
 
+    def _search_serper(self,state: InterviewState):
+        """
+        Retrieve data from the web using serper
+        """
+        try:
+            structured_llm = self.llm.with_structured_output(SearchQuery)
+            search_prompt = GENERATE_SEARCH_QUERY.render()
+            search_query = structured_llm.invoke([SystemMessage(content=search_prompt)] + state["messages"])
+
+            
+            self.logger.info("Performing serper web search", query=search_query.search_query)
+
+            # Search
+            search_docs = self.serper.run(search_query.search_query)
+
+            self.logger.info("Serper Web search completed", result_count=len(search_docs))
+            return {"context": [search_docs]}
+        except Exception as e:
+            self.logger.error("Error during serper web search", error=str(e))
+            raise ResearchAnalystException("Failed during serper web search execution", e)
+
+    def _search_arxiv(self,state: InterviewState):
+        """
+        Retrieve data from arxiv database
+        """
+        try:
+            structure_llm = self.llm.with_structured_output(SearchQuery)
+            search_prompt = GENERATE_SEARCH_QUERY.render()
+            search_query = structure_llm.invoke([SystemMessage(content=search_prompt)] + state["messages"])
+
+            self.logger.info("Performing arxiv doc search", query=search_query.search_query)
+            search = arxiv.Search(query=search_query.search_query, max_results=2)
+            results = []
+            for result in search.results():
+                results.append(f"Title: {result.title}\nSummary: {result.summary}\nURL: {result.entry_id}")
+
+            formatted_search_docs = "\n\n".join(results) or "No papers found"
+            self.logger.info("Arxiv doc search completed", result_count=len(formatted_search_docs))
+            return {"context": [formatted_search_docs]}   
+
+        except Exception as e:
+            self.logger.error("Error during arxiv search", error=str(e))
+            raise ResearchAnalystException("Failed during arxiv doc search execution", e)
+    
+    
     # ----------------------------------------------------------------------
     # 🔹 Step 3: Expert generates answers
     # ----------------------------------------------------------------------
@@ -165,14 +213,20 @@ class InterviewGraphBuilder:
             builder = StateGraph(InterviewState)
 
             builder.add_node("ask_question", self._generate_question)
-            builder.add_node("search_web", self._search_web)
+            builder.add_node("search_tavily", self._search_tavily)
+            builder.add_node("search_serper", self._search_serper)
+            builder.add_node("search_arxiv", self._search_arxiv)
             builder.add_node("generate_answer", self._generate_answer)
             builder.add_node("save_interview", self._save_interview)
             builder.add_node("write_section", self._write_section)
 
             builder.add_edge(START, "ask_question")
-            builder.add_edge("ask_question", "search_web")
-            builder.add_edge("search_web", "generate_answer")
+            builder.add_edge("ask_question", "search_tavily")
+            builder.add_edge("ask_question", "search_serper")
+            builder.add_edge("ask_question", "search_arxiv")
+            builder.add_edge("search_tavily", "generate_answer")
+            builder.add_edge("search_serper", "generate_answer")
+            builder.add_edge("search_arxiv", "generate_answer")
             builder.add_edge("generate_answer", "save_interview")
             builder.add_edge("save_interview", "write_section")
             builder.add_edge("write_section", END)

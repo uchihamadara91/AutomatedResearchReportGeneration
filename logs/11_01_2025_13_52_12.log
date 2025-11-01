@@ -1,0 +1,135 @@
+{"timestamp": "2025-11-01T08:22:29.393553Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T08:22:29.394552Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:22:29.394552Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:22:29.394552Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:22:29.396562Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:22:29.398040Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:22:29.398040Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:22:30.490184Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:22:30.491173Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:30.492180Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:30.505456Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:22:30.513472Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "langgraph and it's property", "thread_id": "7bbebe8b-34e9-4ae2-805c-6f874d376f48", "timestamp": "2025-11-01T08:22:30.514543Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T08:22:30.519462Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-11-01T08:22:34.103855Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-11-01T08:22:36.228956Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T08:22:36.228956Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:22:36.228956Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:22:36.228956Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:22:36.231957Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:22:36.231957Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:22:36.231957Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:22:36.232955Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:22:36.232955Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:36.233955Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:36.242960Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:22:36.250280Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "7bbebe8b-34e9-4ae2-805c-6f874d376f48", "timestamp": "2025-11-01T08:22:36.253257Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Emily Chen", "timestamp": "2025-11-01T08:22:36.260325Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Raj Patel", "timestamp": "2025-11-01T08:22:36.263607Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Sofia Martinez", "timestamp": "2025-11-01T08:22:36.264604Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex, a technology analyst. I'm eager to learn more about langgraph and its practical applications in software development. Could you explain how langgraph can be integrated into existing s", "timestamp": "2025-11-01T08:22:37.334315Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:37.345421Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex, a data science enthusiast keen on understanding the intricacies of langgraph. Could you share some insights into what makes langgraph unique in the realm of graph theory? Specifically", "timestamp": "2025-11-01T08:22:37.622037Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:37.633580Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Thompson, a technology journalist with a keen interest in computational linguistics. I'm excited to delve into the world of langgraph with you. Could you start by explaining what langg", "timestamp": "2025-11-01T08:22:37.825405Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:22:37.825405Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph integration in software development for performance and scalability", "timestamp": "2025-11-01T08:22:38.479523Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=langgraph+integration+in+software+development+for+performance+and+scalability&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph integration in software development for performance and scalability", "timestamp": "2025-11-01T08:22:38.535670Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph integration in software development for performance and scalability", "timestamp": "2025-11-01T08:22:38.586301Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "unique properties of langgraph in graph theory", "timestamp": "2025-11-01T08:22:38.612899Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph model in natural language processing differences from other NLP models", "timestamp": "2025-11-01T08:22:38.738773Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph model in natural language processing differences from other NLP models", "timestamp": "2025-11-01T08:22:38.746770Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=langgraph+model+in+natural+language+processing+differences+from+other+NLP+models&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+{"module": "InterviewGraphBuilder", "query": "unique properties of langgraph in graph theory", "timestamp": "2025-11-01T08:22:38.752771Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph model natural language processing differences", "timestamp": "2025-11-01T08:22:38.980896Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "unique properties of langgraph in graph theory", "timestamp": "2025-11-01T08:22:39.334098Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=unique+properties+of+langgraph+in+graph+theory&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+Got first page: 10 of 2866264 total results
+{"module": "InterviewGraphBuilder", "result_count": 3431, "timestamp": "2025-11-01T08:22:39.624774Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1462, "timestamp": "2025-11-01T08:22:40.353631Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1476, "timestamp": "2025-11-01T08:22:40.391656Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1442, "timestamp": "2025-11-01T08:22:40.560777Z", "level": "info", "event": "Serper Web search completed"}
+Got first page: 100 of 2786393 total results
+{"module": "InterviewGraphBuilder", "result_count": 3431, "timestamp": "2025-11-01T08:22:40.847862Z", "level": "info", "event": "Arxiv doc search completed"}
+Got first page: 100 of 2868017 total results
+{"module": "InterviewGraphBuilder", "result_count": 3545, "timestamp": "2025-11-01T08:22:41.040812Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T08:22:41.800875Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Emily Chen", "timestamp": "2025-11-01T08:22:41.801875Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T08:22:42.574247Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Raj Patel", "timestamp": "2025-11-01T08:22:42.574247Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T08:22:42.871478Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Sofia Martinez", "timestamp": "2025-11-01T08:22:42.873641Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: LangGraph is a graph-based orchestration framework designed to facilitate the development and integration of AI agents into various applications. It provides a robust foundation for building s", "timestamp": "2025-11-01T08:22:46.537007Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T08:22:46.538005Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Raj Patel", "timestamp": "2025-11-01T08:22:46.539012Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: \n\nLangGraph is a framework that focuses on understanding the relationships between language constructs, often used in natural language processing (NLP) applications. It is a graph-based librar", "timestamp": "2025-11-01T08:22:48.145184Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T08:22:48.145184Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Sofia Martinez", "timestamp": "2025-11-01T08:22:48.145184Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: LangGraph is a unique framework that models workflows as directed graphs, specifically designed to enhance the capabilities of large language models (LLMs) and AI agents. One of its distinguis", "timestamp": "2025-11-01T08:22:56.415033Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T08:22:56.416032Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Emily Chen", "timestamp": "2025-11-01T08:22:56.416032Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4407, "timestamp": "2025-11-01T08:23:03.420903Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4238, "timestamp": "2025-11-01T08:23:03.481769Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4421, "timestamp": "2025-11-01T08:23:11.815850Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T08:23:11.818849Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T08:23:11.818849Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T08:23:11.818849Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 867, "timestamp": "2025-11-01T08:23:15.075609Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 927, "timestamp": "2025-11-01T08:23:16.458565Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:39.762756Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:39.764758Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:39.764758Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "format": "docx", "timestamp": "2025-11-01T08:23:39.767267Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_135339\\langgraph_and_it_s_property_7d1abe5c_20251101_135339.docx", "timestamp": "2025-11-01T08:23:39.809139Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "format": "pdf", "timestamp": "2025-11-01T08:23:39.810141Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_135339\\langgraph_and_it_s_property_7d1abe5c_20251101_135339.pdf", "timestamp": "2025-11-01T08:23:39.823246Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_135339\\langgraph_and_it_s_property_7d1abe5c_20251101_135339.pdf", "timestamp": "2025-11-01T08:23:39.823246Z", "level": "info", "event": "Report saved successfully"}
+{"timestamp": "2025-11-01T08:23:42.540052Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T08:23:42.540052Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:23:42.540052Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:23:42.541047Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:23:42.543054Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:23:42.544045Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:23:42.544045Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:23:42.544045Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:42.545047Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:23:42.545047Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:23:42.557309Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:42.565249Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2025-11-01T08:23:44.416344Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T08:23:44.416344Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:23:44.416344Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T08:23:44.417349Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:23:44.419381Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T08:23:44.419381Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:23:44.419381Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T08:23:44.420375Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:44.420375Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:23:44.421377Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T08:23:44.430416Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T08:23:44.436539Z", "level": "info", "event": "Report generation graph built successfully"}

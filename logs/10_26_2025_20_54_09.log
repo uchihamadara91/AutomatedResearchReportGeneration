@@ -1,0 +1,255 @@
+{"timestamp": "2025-10-26T15:24:13.857776Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:24:13.857776Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:24:13.858775Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:24:13.858775Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:24:13.860775Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:24:13.861785Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:24:14.841038Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:24:14.842026Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:24:14.843026Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:24:14.849552Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:24:14.855554Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "Let's talk about astrology", "thread_id": "a43d3a6a-d586-4e21-b468-3f7e5aae127c", "timestamp": "2025-10-26T15:24:14.855554Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology", "timestamp": "2025-10-26T15:24:14.858665Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-10-26T15:24:22.609472Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-10-26T15:26:41.937651Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:26:41.938654Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:26:41.938654Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:26:41.938654Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:26:41.940654Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:26:41.940654Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:26:41.941661Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:26:41.941661Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:26:41.942652Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:26:41.950316Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:26:41.956831Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:26:41.956831Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-10-26T15:26:41.958839Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-10-26T15:26:49.973701Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-10-26T15:27:21.147059Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:27:21.147059Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:27:21.147059Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:27:21.147059Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:27:21.149045Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:27:21.149045Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:27:21.150045Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:27:21.150045Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:27:21.151046Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:27:21.157207Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:27:21.169211Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:27:21.169211Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:27:21.170222Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:27:34.546650Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:27:34.547662Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:27:34.547662Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:27:34.547662Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:27:34.549670Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:27:34.550668Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:27:34.550668Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:27:34.551668Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:27:34.552681Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:27:34.558763Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:27:34.565883Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:27:34.565883Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:27:34.567132Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:28:14.288012Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:28:14.288012Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:28:14.288012Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:28:14.289188Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:28:14.291190Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:28:14.291190Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:28:14.292187Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:28:14.292187Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:28:14.293200Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:28:14.300570Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:28:14.307100Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:28:14.308118Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:28:14.309100Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:21.845622Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:21.846627Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:21.846627Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:21.846627Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:21.848628Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:21.848628Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:21.849628Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:21.849628Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:21.850639Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:21.856164Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:21.862167Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:21.863168Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:21.864168Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:26.041146Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:26.042147Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:26.042147Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:26.042147Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:26.044166Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:26.044166Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:26.045679Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:26.045679Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:26.046687Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:26.052707Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:26.059729Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:26.060729Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:26.061722Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:34.962926Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:34.962926Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:34.962926Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:34.964030Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:34.965031Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:34.966037Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:34.966544Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:34.966544Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:34.967553Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:34.973550Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:34.980617Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:34.982616Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:34.982616Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:41.061532Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:41.061532Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:41.062533Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:41.062533Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:41.064538Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:41.064538Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:41.066059Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:41.066059Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:41.067066Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:41.074074Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:41.080584Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:41.082584Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:41.082584Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:46.572257Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:46.572257Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:46.572257Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:46.572257Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:46.574259Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:46.574259Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:46.575762Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:46.575762Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:46.576772Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:46.582771Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:46.590199Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:46.591199Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:46.592202Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:48.146270Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:48.146270Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:48.146270Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:48.147276Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:48.149275Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:48.149275Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:48.150282Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:48.150282Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:48.151278Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:48.157805Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:48.165814Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:48.168337Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:48.168337Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:49.436580Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:49.436580Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:49.436580Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:49.436580Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:49.438589Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:49.439595Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:49.439595Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:49.440586Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:49.440586Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:49.447096Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:49.454095Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:49.455095Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:49.455095Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:50.704339Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:50.704339Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:50.704339Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:50.704339Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:50.707389Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:50.708383Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:50.708383Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:50.709386Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:50.709386Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:50.716118Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:50.722319Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:50.723319Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:50.723319Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:31:51.651870Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:31:51.651870Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:51.651870Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:31:51.651870Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:31:51.654941Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:51.654941Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:31:51.655867Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:51.655867Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:51.656449Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:31:51.663446Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:51.671138Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:31:51.671138Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "b529de06-a772-4c10-8b37-08a142146d2c", "timestamp": "2025-10-26T15:31:51.672133Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:33:10.043002Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:33:10.043002Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:33:10.043999Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:33:10.043999Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:33:10.046001Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:33:10.046001Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:33:10.046001Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:33:10.046001Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:33:10.047449Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:33:10.053450Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:33:10.061210Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "thread_id": "077c73e2-e30a-4cb4-a60d-21b8d52e5dbe", "timestamp": "2025-10-26T15:33:10.062202Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-10-26T15:33:10.064491Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-10-26T15:33:14.714358Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-10-26T15:34:48.353908Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:34:48.354895Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:34:48.354895Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:34:48.354895Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:34:48.357026Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:34:48.357026Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:34:48.358005Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:34:48.358005Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:34:48.359007Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:34:48.366155Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:34:48.372852Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:34:48.373858Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "077c73e2-e30a-4cb4-a60d-21b8d52e5dbe", "timestamp": "2025-10-26T15:34:48.374854Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:44:04.136056Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:44:04.137062Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:44:04.137062Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:44:04.137062Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:44:04.139073Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:44:04.140062Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:44:04.140062Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:44:04.141065Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:44:04.142065Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:44:04.148598Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:44:04.156088Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:44:04.158096Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "077c73e2-e30a-4cb4-a60d-21b8d52e5dbe", "timestamp": "2025-10-26T15:44:04.158096Z", "level": "info", "event": "Feedback updated"}
+{"timestamp": "2025-10-26T15:44:42.221184Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:44:42.222190Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:44:42.222190Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:44:42.222190Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:44:42.224191Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:44:42.225189Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:44:42.225189Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:44:42.225189Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:44:42.226698Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:44:42.233703Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:44:42.242764Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "langgraph and it's property", "thread_id": "f54bfcef-c43e-4e75-a779-454e7748db6b", "timestamp": "2025-10-26T15:44:42.242764Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-10-26T15:44:42.244848Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-10-26T15:44:49.213205Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-10-26T15:45:05.265111Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-10-26T15:45:05.265111Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:45:05.266116Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-10-26T15:45:05.266116Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-10-26T15:45:05.268140Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:45:05.268140Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-10-26T15:45:05.268140Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:45:05.268140Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:45:05.268140Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-10-26T15:45:05.276260Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:45:05.290334Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-10-26T15:45:05.291403Z", "level": "warning", "event": "No analysts found \u2014 skipping interviews"}
+{"module": "ReportService", "thread_id": "f54bfcef-c43e-4e75-a779-454e7748db6b", "timestamp": "2025-10-26T15:45:05.292341Z", "level": "info", "event": "Feedback updated"}

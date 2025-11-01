@@ -6,6 +6,8 @@ from research_and_analyst.workflows.report_generator_workflow import AutonomousR
 from research_and_analyst.logger import GLOBAL_LOGGER
 from research_and_analyst.exception.custom_exception import ResearchAnalystException
 from langgraph.checkpoint.memory import MemorySaver
+from pathlib import Path
+from fastapi.responses import FileResponse
 
 _shared_memory = MemorySaver()
 
@@ -13,8 +15,8 @@ class ReportService:
     def __init__(self):
         self.llm = ModelLoader().load_llm()
         self.reporter = AutonomousReportGenerator(self.llm)
+        self.reporter.memory = _shared_memory
         self.graph = self.reporter.build_graph()
-        self.reporter.memory = _shared_memory 
         self.logger = GLOBAL_LOGGER.bind(module="ReportService")
 
     def start_report_generation(self, topic: str, max_analysts: int):
@@ -69,13 +71,20 @@ class ReportService:
 
     @staticmethod
     def download_file(file_name: str):
-        """Download generated report."""
-        report_dir = os.path.join(os.getcwd(), "generated_report")
+        """
+        Find a generated file by name anywhere under <project_root>/generated_report
+        and stream it if found; else return a clean JSON error.
+        """
+        # currently you probably have:
+        # project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+        # but because this file is inside research_and_analyst/api/services/
+        # you must go up THREE levels, not two.
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../"))
+        report_dir = os.path.join(project_root, "generated_report")
+
         for root, _, files in os.walk(report_dir):
             if file_name in files:
-                return FileResponse(
-                    path=os.path.join(root, file_name),
-                    filename=file_name,
-                    media_type="application/octet-stream"
-                )
-        return {"error": f"File {file_name} not found"}
+                path = os.path.join(root, file_name)
+                return FileResponse(path=path, filename=file_name, media_type="application/octet-stream")
+
+        return {"error": f"File {file_name} not found under {report_dir}"}
