@@ -215,6 +215,8 @@ class AutonomousReportGenerator:
     def _build_safe_paths(self, topic: str, fmt: str) -> tuple[str, str, str]:
         """
         Return (root_dir, report_folder, file_path) with path length <= ~240 chars (Windows safe).
+        Uses a short filename (e.g., report.docx/pdf) to keep the download name small,
+        while keeping uniqueness in the parent folder name.
         """
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         short_hash = hashlib.sha1(topic.encode("utf-8")).hexdigest()[:8]
@@ -243,6 +245,10 @@ class AutonomousReportGenerator:
             report_folder = os.path.join(root_dir, base_name)
             file_name = f"{base_name}.{fmt}"
             file_path = os.path.join(report_folder, file_name)
+
+        # Keep the actual file name short for downloads; uniqueness remains in folder name
+        file_name = f"report.{fmt}"
+        file_path = os.path.join(report_folder, file_name)
 
         self.logger.info(
             "Resolved report paths",
