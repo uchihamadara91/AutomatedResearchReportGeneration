@@ -1,0 +1,274 @@
+{"timestamp": "2025-11-01T09:12:31.938040Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:12:31.938357Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:12:31.938357Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:12:31.938357Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:12:31.941365Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:12:31.941365Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:12:31.941365Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:12:32.908420Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:12:32.910428Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:32.911428Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:32.925657Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:12:32.932570Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "langgraph and it's property", "thread_id": "f497a595-f702-4301-8038-0e3441dbfcd2", "timestamp": "2025-11-01T09:12:32.933223Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T09:12:32.940002Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-11-01T09:12:39.688461Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-11-01T09:12:46.748812Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:12:46.749812Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:12:46.749812Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:12:46.749812Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:12:46.751812Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:12:46.752811Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:12:46.752811Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:12:46.752811Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:12:46.752811Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:46.753811Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:46.762568Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:12:46.768847Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "f497a595-f702-4301-8038-0e3441dbfcd2", "timestamp": "2025-11-01T09:12:46.770848Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Emily Chen", "timestamp": "2025-11-01T09:12:46.778052Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Raj Patel", "timestamp": "2025-11-01T09:12:46.782274Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Sofia Martinez", "timestamp": "2025-11-01T09:12:46.785258Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex, a data science enthusiast with a keen interest in graph theory. I'm excited to learn more about langgraphs and their properties from you. Could you start by explaining what exactly a ", "timestamp": "2025-11-01T09:12:48.194893Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:48.207480Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex, a technology journalist with a keen interest in computational linguistics. I'm excited to learn more about langgraphs and their properties. Could you explain what a langgraph is and h", "timestamp": "2025-11-01T09:12:48.225300Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:48.235336Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex, a technology analyst. I'm eager to learn more about langgraphs and their properties. Could you explain what langgraphs are and how they differ from other graph-based algorithms in nat", "timestamp": "2025-11-01T09:12:48.306362Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:12:48.317474Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties in graph theory", "timestamp": "2025-11-01T09:12:49.037119Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties and differences from other linguistic models", "timestamp": "2025-11-01T09:12:49.125409Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties in graph theory", "timestamp": "2025-11-01T09:12:49.155430Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties and differences from other linguistic models", "timestamp": "2025-11-01T09:12:49.218195Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties and differences from other graph-based algorithms in NLP", "timestamp": "2025-11-01T09:12:49.297386Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties in graph theory", "timestamp": "2025-11-01T09:12:49.370965Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=langgraph+properties+in+graph+theory&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties and differences from other graph-based algorithms in NLP", "timestamp": "2025-11-01T09:12:49.399307Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=langgraph+properties+and+differences+from+other+graph-based+algorithms+in+NLP&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties and differences from other linguistic models", "timestamp": "2025-11-01T09:12:49.517459Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=langgraph+properties+and+differences+from+other+linguistic+models&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "langgraph properties and differences from other graph-based algorithms in NLP", "timestamp": "2025-11-01T09:12:49.724830Z", "level": "info", "event": "Performing serper web search"}
+{"module": "InterviewGraphBuilder", "result_count": 1406, "timestamp": "2025-11-01T09:12:50.838996Z", "level": "info", "event": "Serper Web search completed"}
+Got first page: 25 of 2830432 total results
+{"module": "InterviewGraphBuilder", "result_count": 3545, "timestamp": "2025-11-01T09:12:50.926781Z", "level": "info", "event": "Arxiv doc search completed"}
+Got first page: 25 of 2861733 total results
+{"module": "InterviewGraphBuilder", "result_count": 3545, "timestamp": "2025-11-01T09:12:50.949756Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1430, "timestamp": "2025-11-01T09:12:51.097214Z", "level": "info", "event": "Serper Web search completed"}
+Got first page: 100 of 2755676 total results
+{"module": "InterviewGraphBuilder", "result_count": 3545, "timestamp": "2025-11-01T09:12:51.234604Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1465, "timestamp": "2025-11-01T09:12:51.562488Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T09:12:52.038427Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Sofia Martinez", "timestamp": "2025-11-01T09:12:52.038758Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T09:12:52.172322Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Emily Chen", "timestamp": "2025-11-01T09:12:52.173340Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T09:12:52.501416Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Raj Patel", "timestamp": "2025-11-01T09:12:52.502422Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: LangGraph is a framework designed to organize large language models into graph-based workflows, enabling flexible and parallel multi-step reasoning. It simplifies building AI applications that", "timestamp": "2025-11-01T09:12:59.394215Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T09:12:59.395224Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Raj Patel", "timestamp": "2025-11-01T09:12:59.395224Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: LangGraph is a framework designed for building modular, graph-based systems, particularly in the context of large language models (LLMs) and AI workflows. It models agent workflows as graphs u", "timestamp": "2025-11-01T09:13:02.074513Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T09:13:02.075502Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Emily Chen", "timestamp": "2025-11-01T09:13:02.076492Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: LangGraph is a framework designed to model agent workflows as graphs, focusing on stateful, graph-based workflows with language model agents. It is particularly useful for orchestrating comple", "timestamp": "2025-11-01T09:13:03.169526Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T09:13:03.170540Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Sofia Martinez", "timestamp": "2025-11-01T09:13:03.171524Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3943, "timestamp": "2025-11-01T09:13:12.742454Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3753, "timestamp": "2025-11-01T09:13:16.114240Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4307, "timestamp": "2025-11-01T09:13:17.862734Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T09:13:17.864736Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T09:13:17.865732Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "timestamp": "2025-11-01T09:13:17.867249Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 870, "timestamp": "2025-11-01T09:13:20.893562Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 875, "timestamp": "2025-11-01T09:13:21.520242Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:25.579932Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:25.579932Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:25.580930Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "format": "docx", "timestamp": "2025-11-01T09:13:25.581934Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "root_dir": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report", "report_folder": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325", "file_name": "langgraph_and_it_s_property_7d1abe5c_20251101_144325.docx", "file_path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325\\langgraph_and_it_s_property_7d1abe5c_20251101_144325.docx", "path_len": 201, "timestamp": "2025-11-01T09:13:25.581934Z", "level": "info", "event": "Resolved report paths"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325\\langgraph_and_it_s_property_7d1abe5c_20251101_144325.docx", "timestamp": "2025-11-01T09:13:25.610227Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "langgraph and it's property", "format": "pdf", "timestamp": "2025-11-01T09:13:25.610227Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "root_dir": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report", "report_folder": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325", "file_name": "langgraph_and_it_s_property_7d1abe5c_20251101_144325.pdf", "file_path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325\\langgraph_and_it_s_property_7d1abe5c_20251101_144325.pdf", "path_len": 200, "timestamp": "2025-11-01T09:13:25.611216Z", "level": "info", "event": "Resolved report paths"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325\\langgraph_and_it_s_property_7d1abe5c_20251101_144325.pdf", "timestamp": "2025-11-01T09:13:25.618466Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\langgraph_and_it_s_property_7d1abe5c_20251101_144325\\langgraph_and_it_s_property_7d1abe5c_20251101_144325.pdf", "timestamp": "2025-11-01T09:13:25.618466Z", "level": "info", "event": "Report saved successfully"}
+{"timestamp": "2025-11-01T09:13:29.826329Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:13:29.826329Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:13:29.826329Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:13:29.826329Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:13:29.828283Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:13:29.828283Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:13:29.828283Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:13:29.829535Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:29.830537Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:13:29.830537Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:13:29.841684Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:29.848341Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2025-11-01T09:13:31.165774Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:13:31.166768Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:13:31.166768Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:13:31.166768Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:13:31.168297Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:13:31.169277Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:13:31.169277Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:13:31.169277Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:31.170282Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:13:31.170282Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:13:31.180315Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:31.185712Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2025-11-01T09:13:52.582981Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:13:52.582981Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:13:52.582981Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:13:52.582981Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:13:52.584981Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:13:52.584981Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:13:52.584981Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:13:52.584981Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:52.586498Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:13:52.586498Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:13:52.596679Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:13:52.604217Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "thread_id": "66f29268-8846-414d-ab07-3e2248c9e2f7", "timestamp": "2025-11-01T09:13:52.604217Z", "level": "info", "event": "Starting report pipeline"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-11-01T09:13:52.606723Z", "level": "info", "event": "Creating analyst personas"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "count": 3, "timestamp": "2025-11-01T09:13:58.047863Z", "level": "info", "event": "Analysts created"}
+{"timestamp": "2025-11-01T09:14:07.261160Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:14:07.261160Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:14:07.262166Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:14:07.262166Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:14:07.265158Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:14:07.265158Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:14:07.265158Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:14:07.265158Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:07.266664Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:07.267976Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:07.277229Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:07.284508Z", "level": "info", "event": "Report generation graph built successfully"}
+{"module": "ReportService", "thread_id": "66f29268-8846-414d-ab07-3e2248c9e2f7", "timestamp": "2025-11-01T09:14:07.285508Z", "level": "info", "event": "Feedback updated"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Harmon", "timestamp": "2025-11-01T09:14:07.291599Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Alex Carter", "timestamp": "2025-11-01T09:14:07.296537Z", "level": "info", "event": "Generating analyst question"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Maya Singh", "timestamp": "2025-11-01T09:14:07.297769Z", "level": "info", "event": "Generating analyst question"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, Dr. Harmon. My name is Alex Thompson, and I'm fascinated by the intersection of astrology and psychology. I'm eager to learn more about how astrological signs and planetary alignments can influ", "timestamp": "2025-11-01T09:14:09.374617Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:09.383129Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Jordan Mitchell, and I'm eager to delve into the intricacies of astrology with you. As an astrology critic, you must have a unique perspective on why astrology seems to resonate so deeply w", "timestamp": "2025-11-01T09:14:09.702110Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:09.711351Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "question_preview": "Hello, I'm Alex Thompson, a researcher with a keen interest in cultural phenomena. I'm excited to delve into the fascinating world of astrology with you. \n\nTo start, could you explain how astrology ha", "timestamp": "2025-11-01T09:14:10.048476Z", "level": "info", "event": "Question generated successfully"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:10.057481Z", "level": "info", "event": "Generating search query from conversation"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "cognitive biases that influence belief in astrology", "timestamp": "2025-11-01T09:14:10.578135Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrological signs influence personality and behavior", "timestamp": "2025-11-01T09:14:10.644141Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrological signs influence personality and behavior", "timestamp": "2025-11-01T09:14:10.689557Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=how+astrological+signs+influence+personality+and+behavior&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "cognitive biases that influence belief in astrology", "timestamp": "2025-11-01T09:14:10.780115Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=cognitive+biases+that+influence+belief+in+astrology&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "cognitive biases that influence belief in astrology", "timestamp": "2025-11-01T09:14:10.945134Z", "level": "info", "event": "Performing serper web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "how astrological signs influence personality and behavior", "timestamp": "2025-11-01T09:14:10.984298Z", "level": "info", "event": "Performing Tavily web search"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "historical influence of astrology on cultural narratives in different societies", "timestamp": "2025-11-01T09:14:11.164323Z", "level": "info", "event": "Performing serper web search"}
+{"module": "InterviewGraphBuilder", "query": "historical influence of astrology on cultural narratives in different societies", "timestamp": "2025-11-01T09:14:11.165324Z", "level": "info", "event": "Performing arxiv doc search"}
+Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=historical+influence+of+astrology+on+cultural+narratives+in+different+societies&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "query": "historical influence of astrology on cultural narratives in different societies", "timestamp": "2025-11-01T09:14:11.619664Z", "level": "info", "event": "Performing Tavily web search"}
+Got first page: 100 of 2805177 total results
+{"module": "InterviewGraphBuilder", "result_count": 2286, "timestamp": "2025-11-01T09:14:12.344389Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1442, "timestamp": "2025-11-01T09:14:12.345389Z", "level": "info", "event": "Serper Web search completed"}
+Got first page: 10 of 2869491 total results
+{"module": "InterviewGraphBuilder", "result_count": 3278, "timestamp": "2025-11-01T09:14:12.358562Z", "level": "info", "event": "Arxiv doc search completed"}
+Got first page: 100 of 2788126 total results
+{"module": "InterviewGraphBuilder", "result_count": 3490, "timestamp": "2025-11-01T09:14:12.540063Z", "level": "info", "event": "Arxiv doc search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1447, "timestamp": "2025-11-01T09:14:12.574980Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 1500, "timestamp": "2025-11-01T09:14:12.951693Z", "level": "info", "event": "Serper Web search completed"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T09:14:13.431594Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Alex Carter", "timestamp": "2025-11-01T09:14:13.433580Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T09:14:14.840414Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Harmon", "timestamp": "2025-11-01T09:14:14.841413Z", "level": "info", "event": "Generating expert answer"}
+{"module": "InterviewGraphBuilder", "result_count": 5, "timestamp": "2025-11-01T09:14:16.941491Z", "level": "info", "event": "Tavily Web search completed"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Maya Singh", "timestamp": "2025-11-01T09:14:16.942504Z", "level": "info", "event": "Generating expert answer"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology's appeal can be largely attributed to several cognitive biases that influence human perception and belief systems. One prominent example is the Barnum effect, also known as the Forer", "timestamp": "2025-11-01T09:14:18.593490Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T09:14:18.594487Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Alex Carter", "timestamp": "2025-11-01T09:14:18.595488Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology has long been considered a guide for understanding personality, behavior, and even predicting future events. Each of the twelve zodiac signs is associated with unique traits, strengt", "timestamp": "2025-11-01T09:14:20.681604Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T09:14:20.682603Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Celeste Harmon", "timestamp": "2025-11-01T09:14:20.683597Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "preview": "Expert: Astrology has historically played a significant role in shaping cultural narratives across various societies. Its influence can be traced back to ancient civilizations such as the Babylonians,", "timestamp": "2025-11-01T09:14:23.848666Z", "level": "info", "event": "Expert answer generated successfully"}
+{"module": "InterviewGraphBuilder", "message_count": 3, "timestamp": "2025-11-01T09:14:23.849661Z", "level": "info", "event": "Interview transcript saved"}
+{"module": "InterviewGraphBuilder", "analyst": "Dr. Maya Singh", "timestamp": "2025-11-01T09:14:23.849661Z", "level": "info", "event": "Generating report section"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3588, "timestamp": "2025-11-01T09:14:32.914423Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 4366, "timestamp": "2025-11-01T09:14:35.752284Z", "level": "info", "event": "Report section generated successfully"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "InterviewGraphBuilder", "length": 3523, "timestamp": "2025-11-01T09:14:36.457043Z", "level": "info", "event": "Report section generated successfully"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-11-01T09:14:36.458569Z", "level": "info", "event": "Generating conclusion"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-11-01T09:14:36.458569Z", "level": "info", "event": "Generating introduction"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "timestamp": "2025-11-01T09:14:36.459555Z", "level": "info", "event": "Writing report"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 786, "timestamp": "2025-11-01T09:14:38.766741Z", "level": "info", "event": "Conclusion generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "length": 863, "timestamp": "2025-11-01T09:14:39.772609Z", "level": "info", "event": "Introduction generated"}
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:46.118638Z", "level": "info", "event": "Report written successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:46.119639Z", "level": "info", "event": "Finalizing report compilation"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:46.119639Z", "level": "info", "event": "Report finalized"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "format": "docx", "timestamp": "2025-11-01T09:14:46.120636Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "root_dir": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report", "report_folder": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446", "file_name": "Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.docx", "file_path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.docx", "path_len": 227, "timestamp": "2025-11-01T09:14:46.120636Z", "level": "info", "event": "Resolved report paths"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.docx", "timestamp": "2025-11-01T09:14:46.148287Z", "level": "info", "event": "Report saved successfully"}
+{"module": "AutonomousReportGenerator", "topic": "Let's talk about astrology, how it is a backbone in human nature and behaviour", "format": "pdf", "timestamp": "2025-11-01T09:14:46.148287Z", "level": "info", "event": "Saving report"}
+{"module": "AutonomousReportGenerator", "root_dir": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report", "report_folder": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446", "file_name": "Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.pdf", "file_path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.pdf", "path_len": 226, "timestamp": "2025-11-01T09:14:46.148287Z", "level": "info", "event": "Resolved report paths"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.pdf", "timestamp": "2025-11-01T09:14:46.156528Z", "level": "info", "event": "Centered PDF saved successfully"}
+{"module": "AutonomousReportGenerator", "path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\generated_report\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446\\Let_s_talk_about_astrology_how_it_is_a_b_50da78a4_20251101_144446.pdf", "timestamp": "2025-11-01T09:14:46.156528Z", "level": "info", "event": "Report saved successfully"}
+{"timestamp": "2025-11-01T09:14:50.453564Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:14:50.453564Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:14:50.454564Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:14:50.454564Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:14:50.456576Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:14:50.456576Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:14:50.456576Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:14:50.456576Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:50.456576Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:50.458655Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:50.470326Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:50.477581Z", "level": "info", "event": "Report generation graph built successfully"}
+{"timestamp": "2025-11-01T09:14:51.644126Z", "level": "info", "event": "Initializing ApiKeyManager"}
+{"timestamp": "2025-11-01T09:14:51.644126Z", "level": "info", "event": "OPENAI_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:14:51.644126Z", "level": "info", "event": "GOOGLE_API_KEY loaded successfully from environment"}
+{"timestamp": "2025-11-01T09:14:51.644126Z", "level": "info", "event": "GROQ_API_KEY loaded successfully from environment"}
+{"path": "C:\\Users\\shank\\Downloads\\LLMOPs\\My_Code\\AutomatedResearchReportGeneration\\research_and_analyst\\config\\configuration.yaml", "keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:14:51.646643Z", "level": "info", "event": "Configuration loaded successfully"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-11-01T09:14:51.647207Z", "level": "info", "event": "YAML configuration loaded successfully"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:14:51.647207Z", "level": "info", "event": "Loading LLM"}
+{"provider": "openai", "model": "gpt-4o", "timestamp": "2025-11-01T09:14:51.647990Z", "level": "info", "event": "LLM loaded successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:51.647990Z", "level": "info", "event": "Building report generation graph"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:51.649225Z", "level": "info", "event": "Building Interview Graph workflow"}
+{"module": "InterviewGraphBuilder", "timestamp": "2025-11-01T09:14:51.660442Z", "level": "info", "event": "Interview Graph compiled successfully"}
+{"module": "AutonomousReportGenerator", "timestamp": "2025-11-01T09:14:51.667488Z", "level": "info", "event": "Report generation graph built successfully"}
