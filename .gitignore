@@ -12,13 +12,17 @@ uv.lock
 
 .env
 
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\research_and_analyst\automatedresearchreportgeneration.egg-info\
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\automatedresearchreportgeneration.egg-info\
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\logs\
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\generated_report\
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\users.db\
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\Project3 Assignment.txt
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\LLMOPS-Project-03.png
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\archive\
+# Project paths (use repo-relative, forward slashes)
+research_and_analyst/automatedresearchreportgeneration.egg-info/
+automatedresearchreportgeneration.egg-info/
+logs/
+generated_report/
+users.db
+Project3 Assignment.txt
+LLMOPS-Project-03.png
+archive/
 
-C:\Users\shank\Downloads\LLMOPs\My_Code\AutomatedResearchReportGeneration\get_lib_versions.py
+get_lib_versions.py
+
+# Ignore accidental Windows reserved-name file
+CON
