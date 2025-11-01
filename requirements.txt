@@ -17,7 +17,6 @@ aiofiles>=23.2.1
 sqlalchemy==2.0.43
 bcrypt==3.2.2
 passlib==1.7.4
-arxiv
-langchain-tavily
-serpapi
-# -e .
+arxiv==2.2.0
+langchain-tavily==0.2.12
+serpapi==0.1.5

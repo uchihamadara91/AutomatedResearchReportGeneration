@@ -1,14 +1,9 @@
 import importlib.metadata
 packages = [
-    "ipykernel",
-    "langchain-community",
-    "langchain-core",
-    "langchain-google-genai",
-    "langchain-groq",
-    "langchain-openai",
-    "langgraph",
-    "tavily-python",
-    "wikipedia",
+"arxiv",
+"langchain-tavily",
+"serpapi"
+
 ]
 for pkg in packages:
     try:
